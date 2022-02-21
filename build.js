@@ -3,8 +3,8 @@ const { build } = require("electron-builder")
 
 build({
     "config": {
-        "appId": "com.mathrax.kimitorobot",
-        "productName": "KimiToRobot",
+        "appId": "com.mathrax.electron-base",
+        "productName": "electron-base",
         "files": [
             "app/**/*",
             "package.json",
