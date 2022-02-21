@@ -1,0 +1,21 @@
+{
+  "name": "electron-base",
+  "version": "1.0.0",
+  "description": "Electron Base",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "rm -rf dist && node ./build.js",
+    "build-win64": "rm -rf dist && electron-builder --win --x64"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^16.0.9",
+    "electron-builder": "^22.14.13",
+    "node-osc": "^6.1.14"
+  }
+}
