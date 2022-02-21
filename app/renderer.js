@@ -21,33 +21,13 @@ const s = (p) => {
         p.background(100, 200, 200);
     }
     p.osc_parse = () => {
-        for (let i = 0; i < osc_sensor.length; i++) {
-            // if (osc_sensor[i] > 2000) osc_sensor[i] = 0;
-        }
+        // for (let i = 0; i < osc_sensor.length; i++) {
+        // if (osc_sensor[i] > 2000) osc_sensor[i] = 0;
+        // }
     }
     p.keyPressed = () => {
     }
 
-    p.random_make = () => {
-        let arr = [];
-        numArr = [];
-        for (let i = 0; i < 16; i++) {
-            arr[i] = i + 1;
-        }
-        let len = arr.length;
-        for (let i = 0; i < 16; i++) {
-            const rndNum = Math.floor(Math.random() * len);
-            numArr.push(arr[rndNum]);
-            arr[rndNum] = arr[len - 1];
-            len--;
-        }
-    }
-    p.get_random = () => {
-        if (numArr.length == 0) {
-            p.random_make();
-        }
-        return numArr.pop();
-    }
     // OSCデータを受信する
     p.oscReceive = (msg) => {
         let data = oscAPI.receive("/sensor", msg);
