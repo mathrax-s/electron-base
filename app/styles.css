@@ -4,7 +4,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: rgb(50,50,50);
+    background: rgb(0,0,0);
   }
   canvas {
     display: block;

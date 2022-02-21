@@ -18,12 +18,15 @@ const s = (p) => {
         p.createCanvas(p.windowWidth, p.windowHeight);
     }
     p.draw = () => {
-        p.background(100, 200, 200);
+        p.background(0, 0, 0);
+
     }
     p.osc_parse = () => {
         // for (let i = 0; i < osc_sensor.length; i++) {
         // if (osc_sensor[i] > 2000) osc_sensor[i] = 0;
         // }
+    }
+    p.mousePressed = () => {
     }
     p.keyPressed = () => {
     }
